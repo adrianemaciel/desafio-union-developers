@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --background: #1f1d2b;
+  --foreground: linear-gradient(0% #851d86 100%, 100% #0048fe 100%);
+  --color-primary: #ffffff;
+  --color-secondary: #e2e2e2;
+}
+
+body {
+  background: var(--background);
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
