@@ -5,14 +5,17 @@ module.exports = {
     extend: {
       colors: {
         background: "#1f1d2b",
-        primary: "#ffffff",
-        secondary: "#e2e2e2",
+        primary: "#121119",
         gradient: {
-          from: "#0048fe",
-          to: "#851d86",
+          from: "#851d86",
+          to: "#0048fe",
         },
       },
+      textColor: {
+        primary: "#ffffff",
+        secondary: "#e2e2e2",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
