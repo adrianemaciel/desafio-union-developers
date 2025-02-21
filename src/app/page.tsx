@@ -1,15 +1,17 @@
 import Header from "@/components/Header";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
+import Pilares from "@/sections/Pilares";
 import "@/styles/globals.css";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="max-w-[1920px] mx-auto">
         <Hero />
         <About />
+        <Pilares />
       </main>
     </>
   );
