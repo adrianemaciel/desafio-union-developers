@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Pilares from "@/sections/Pilares";
+import Benefits from "@/sections/Benefits";
 import "@/styles/globals.css";
 
 export default function Home() {
@@ -12,7 +13,9 @@ export default function Home() {
         <Hero />
         <About />
         <Pilares />
+        <Benefits />
       </main>
     </>
   );
 }
+
