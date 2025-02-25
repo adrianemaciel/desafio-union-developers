@@ -3,6 +3,7 @@ import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Pilares from "@/sections/Pilares";
 import Benefits from "@/sections/Benefits";
+import Doubts from "@/sections/Doubts";
 import "@/styles/globals.css";
 
 export default function Home() {
@@ -14,8 +15,8 @@ export default function Home() {
         <About />
         <Pilares />
         <Benefits />
+        <Doubts />
       </main>
     </>
   );
 }
-
