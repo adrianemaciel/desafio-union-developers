@@ -11,9 +11,6 @@
 
 :root {
   --background: #1f1d2b;
-  --foreground: linear-gradient(0% #851d86 100%, 100% #0048fe 100%);
-  --color-primary: #ffffff;
-  --color-secondary: #e2e2e2;
 }
 
 body {
@@ -21,3 +18,4 @@ body {
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Open Sans", "Helvetica Neue", sans-serif;
 }
+
