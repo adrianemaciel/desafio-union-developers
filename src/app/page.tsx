@@ -1,10 +1,11 @@
+import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Pilares from "@/sections/Pilares";
 import Benefits from "@/sections/Benefits";
 import Doubts from "@/sections/Doubts";
-import "@/styles/globals.css";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Pilares />
         <Benefits />
         <Doubts />
+        <Footer />
       </main>
     </>
   );
