@@ -1,7 +1,7 @@
 const PilarCard = () => {
   return (
-    <div className="mt-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="mt-20 px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {[
           {
             title: "Ativa",
@@ -13,21 +13,31 @@ const PilarCard = () => {
           },
           {
             title: "Ágil",
-            text: "A metodologia ágil é uma metodologia que estimula a colaboração entre o time, permitindo que tenha uma visão mais transparente, liberdade para fazer escolhas e tomar decisões, buscando a melhora continua entre os membros, os processos e a qualidade geral do trabalho.",
+            text: "A metodologia ágil é uma metodologia que estimula a colaboração entre o time, permitindo que tenha uma visão mais transparente, liberdade para fazer escolhas e tomar decisões, buscando a melhora contínua entre os membros, os processos e a qualidade geral do trabalho.",
           },
         ].map((pilar, index) => (
           <div
             key={index}
-            className="flex flex-col items-center h-96 justify-center"
+            className="flex flex-col items-center h-full justify-center"
           >
-            <div className="w-[380px] h-[128px] bg-gradient-to-r from-gradient-from to-gradient-to p-6  rounded-t-xl shadow-lg">
-              <h3 className="text-4xl font-bold text-secondary">
+            <div className="w-full max-w-md h-30 bg-gradient-to-r from-gradient-from to-gradient-to p-6 rounded-t-xl shadow-lg flex items-center justify-center">
+              <h3 className="text-3xl md:text-2xl font-bold text-secondary text-center">
                 {pilar.title}
               </h3>
             </div>
 
-            <div className="bg-primary p-6 min-h-[320px] flex items-center justify-center rounded-xl">
-              <p className="text-secondary text-lg leading-7">{pilar.text}</p>
+            <div
+              className="bg-primary p-6 w-full max-w-md flex-1 rounded-b-xl shadow-lg"
+              style={{
+                background:
+                  "linear-gradient(225deg, rgba(0, 72, 254, 0.1) 0%, rgba(133, 29, 134, 0.1) 100%)",
+              }}
+            >
+              <div className="h-full overflow-y-auto flex items-center justify-center">
+                <p className="text-secondary text-base md:text-lg leading-relaxed text-center">
+                  {pilar.text}
+                </p>
+              </div>
             </div>
           </div>
         ))}
