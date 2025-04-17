@@ -6,7 +6,7 @@ import MenuMobile from "./MenuMobile";
 
 const Header = () => {
   return (
-    <header className="max-w-[1920px] mx-auto fixed top-0 left-0 w-full z-50 bg-primary sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-40">
+    <header className="max-w-[1920px] mx-auto fixed top-0 left-0 w-full z-50 bg-primary px-4 xl:px-40">
       <div className="flex items-center justify-between h-16 md:h-20 lg:h-24">
         <Link href="/">
           <Image
@@ -14,11 +14,10 @@ const Header = () => {
             alt="Union Developers Logo"
             width={300}
             height={60}
-            className="w-auto h-10 md:h-8 lg:h-8 px-4"
+            className="w-auto h-10 md:h-8 lg:h-8"
           />
         </Link>
-
-        <div className="hidden lg:flex items-center justify-center gap-6 text-secondary text-lg font-bold">
+        <div className="hidden md:px-4 lg:flex items-center gap-6 text-secondary text-lg font-bold">
           <nav className="flex items-center gap-6">
             <Link
               href="#sobre"
@@ -59,10 +58,10 @@ const Header = () => {
           </nav>
         </div>
 
-        <div className="hidden lg:flex items-center ml-8">
+        <div className="hidden lg:flex items-center">
           <Link
             href="#inscricao"
-            className="flex items-center justify-center bg-gradient-to-r to-gradient-to from-gradient-from text-white text-xl font-bold rounded-md transition-transform hover:scale-105 px-8 py-3 whitespace-nowrap"
+            className="flex items-center bg-gradient-to-r to-gradient-to from-gradient-from text-white text-xl font-bold rounded-md transition-transform hover:scale-105 px-8 py-3 whitespace-nowrap tracking-wider"
           >
             Junte-se a nós
           </Link>

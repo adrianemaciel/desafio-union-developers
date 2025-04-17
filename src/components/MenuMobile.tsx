@@ -15,8 +15,8 @@ const MenuMobile = () => {
       </button>
 
       {menuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-primary shadow-md">
-          <div className="flex flex-col items-start px-12 space-y-6 py-6 text-xl text-secondary font-bold ">
+        <div className="absolute top-16 left-0 w-full bg-primary shadow-md">
+          <div className="flex flex-col items-start px-10 space-y-6 py-6 text-xl text-secondary font-bold ">
             <Link href="#sobre" onClick={() => setMenuOpen(false)}>
               Sobre
             </Link>
@@ -41,7 +41,9 @@ const MenuMobile = () => {
               onClick={() => setMenuOpen(false)}
             >
               <button>
-                <span className="text-secondary font-bold">Junte-se a nós</span>
+                <span className="text-secondary font-bold tracking-wider">
+                  Junte-se a nós
+                </span>
               </button>
             </Link>
           </div>
